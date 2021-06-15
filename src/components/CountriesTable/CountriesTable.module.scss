@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    padding: 20px;
+    button {
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.header_flag {
+    flex: 1;
+}
+
+.header_name, .header_population, .header_area, .header_gini {
+    flex: 4;
+    color: var(--text-secondary);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:focus {
+        outline: none;
+    }
+}
+
+.header_name {
+    justify-content: flex-start;
+}
+
+.header_arrow {
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.row {
+    background-color: var(--background-color-light);
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 16px;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    font-weight: 500;
+    // transition: transform 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0px 4px 16px rgba(0,0,0,0.2);
+    }
+}
+
+
+
+.population, .area, .gini, .name {
+    flex: 4;
+}
+
+.name {
+    text-align: left;
+}
+
+.flag {
+    flex: 1;
+    display: flex;
+    margin-right: 10px;
+    img {
+        border-radius: 3px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .flag, .area, .gini, .header_flag, .header_area, .header_gini {
+        display: none;
+    }
+}

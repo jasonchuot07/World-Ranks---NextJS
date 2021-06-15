@@ -1,0 +1,124 @@
+.overview_panel {
+  padding: 30px;
+  border-radius: 7px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  background-color: var(--background-color-light);
+}
+
+.overview_panel img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.overview_name {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.overview_region {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.overview_sub_panel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  text-align: center;
+}
+
+.overview_label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.overview_value {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.details_panel {
+  border-radius: 7px;
+  background-color: var(--background-color-light);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.details_panel_header {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.details_panel_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.details_panel_label {
+  color: var(--text-secondary);
+}
+
+.details_panel_borders {
+  padding: 20px;
+}
+
+.details_borders_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(120px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 24px;
+}
+
+.details_borders_container img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.details_panel_borders_label {
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.details_panel_borders_country {
+  text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    gap: 26px;
+  }
+  .container_left {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/ span 4;
+  }
+  .container_right {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 8;
+    grid-column: 5/ span 8;
+  }
+}
+/*# sourceMappingURL=country.module.css.map */
